@@ -1,0 +1,478 @@
+\hypertarget{classVectorN}{
+\section{VectorN$<$ real, dim $>$ Class Template Reference}
+\label{classVectorN}\index{VectorN@{VectorN}}
+}
+
+
+A N-\/dimensional Vector class.  
+
+
+
+
+{\ttfamily \#include $<$vectorn.hpp$>$}
+
+Inheritance diagram for VectorN$<$ real, dim $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classVectorN}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classVectorN_af50158c7bc131bbfde53b5120cb6cddd}{
+\hyperlink{classVectorN_af50158c7bc131bbfde53b5120cb6cddd}{VectorN} ()}
+\label{classVectorN_af50158c7bc131bbfde53b5120cb6cddd}
+
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\hypertarget{classVectorN_a6ef9847ef88fc72b3d0388ce79eaa2fe}{
+\hyperlink{classVectorN_a6ef9847ef88fc72b3d0388ce79eaa2fe}{VectorN} (const real v\mbox{[}$\,$\mbox{]})}
+\label{classVectorN_a6ef9847ef88fc72b3d0388ce79eaa2fe}
+
+\begin{DoxyCompactList}\small\item\em Constructor from an array of coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classVectorN_a6dc444a7c6d3f168e0f54b5fdae51bf8}{
+\hyperlink{classVectorN_a6dc444a7c6d3f168e0f54b5fdae51bf8}{VectorN} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v)}
+\label{classVectorN_a6dc444a7c6d3f168e0f54b5fdae51bf8}
+
+\begin{DoxyCompactList}\small\item\em Constructor from another \hyperlink{classVectorN}{VectorN}. \end{DoxyCompactList}\item 
+real \& \hyperlink{classVectorN_aa926f5c408d53dfc7ec581e9b47c27ad}{operator\mbox{[}$\,$\mbox{]}} (unsigned i)
+\begin{DoxyCompactList}\small\item\em Coordinate indexing. \end{DoxyCompactList}\item 
+real \hyperlink{classVectorN_a5463f965a3bb96d9b2a87b6392bc15c7}{operator\mbox{[}$\,$\mbox{]}} (unsigned i) const 
+\begin{DoxyCompactList}\small\item\em Coordinate indexing. \end{DoxyCompactList}\item 
+bool \hyperlink{classVectorN_abdb4216ebccd9e51dc74f9f3bf5ec4eb}{operator==} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classVectorN_a2340b63fb9299ad20b23ff162692d720}{operator!=} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \& \hyperlink{classVectorN_a7202401fb6ed378c10a06397e46d9d49}{operator=} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Assignment. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \& \hyperlink{classVectorN_a91138a1f8badc1c7e656005f4f7cfe30}{operator+=} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Vector sum assignment. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \& \hyperlink{classVectorN_a85e5e683a6f9aeff68b546ec923c737c}{operator-\/=} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Vector difference assignment. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \& \hyperlink{classVectorN_ab898c49e2188a964a637fdc749e9b26d}{operator$\ast$=} (real s)
+\begin{DoxyCompactList}\small\item\em Multiplication by scalar assignment. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \& \hyperlink{classVectorN_a69839721f7fdf66ee896a91f98655274}{operator/=} (real s)
+\begin{DoxyCompactList}\small\item\em Multiplication by inverse scalar assignment. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \hyperlink{classVectorN_a26e5f52c7b135d5d5c7775061e19647c}{operator+} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Vector sum. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \hyperlink{classVectorN_a6d4600d3a81bb8c486770771a38d6e30}{operator-\/} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Vector difference. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename scalar $>$ }\\\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \hyperlink{classVectorN_a829a2b55702c0fc475c3ae39d79b4e66}{operator$\ast$} (scalar s) const 
+\begin{DoxyCompactList}\small\item\em Multiplication by scalar. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \hyperlink{classVectorN_aca314d985163785e68d412a2e73fd50c}{operator/} (real s) const 
+\begin{DoxyCompactList}\small\item\em Multiplication by inverse scalar. \end{DoxyCompactList}\item 
+\hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \hyperlink{classVectorN_a200e8f7a82d7681232ac18fcbd746f29}{operator-\/} () const 
+\begin{DoxyCompactList}\small\item\em Symmetric operator (unary minus) \end{DoxyCompactList}\item 
+real \hyperlink{classVectorN_ac969f8b5e56b59d5aef32bcde365bf24}{operator$\ast$} (const \hyperlink{classVectorN}{VectorN}$<$ real, dim $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Dot product. \end{DoxyCompactList}\item 
+\hypertarget{classVectorN_abab02b195f9f65fe10b28299e5a8ccd8}{
+real \hyperlink{classVectorN_abab02b195f9f65fe10b28299e5a8ccd8}{norm2} (void) const }
+\label{classVectorN_abab02b195f9f65fe10b28299e5a8ccd8}
+
+\begin{DoxyCompactList}\small\item\em Returns the square of the norm of the vector. \end{DoxyCompactList}\item 
+\hypertarget{classVectorN_ae40fe34821f326f9c8ebe862c685b2b3}{
+real \hyperlink{classVectorN_ae40fe34821f326f9c8ebe862c685b2b3}{norm} (void) const }
+\label{classVectorN_ae40fe34821f326f9c8ebe862c685b2b3}
+
+\begin{DoxyCompactList}\small\item\em Returns the Euclidian norm of the vector. \end{DoxyCompactList}\item 
+\hypertarget{classVectorN_af6be6194bee3d68ab71217cb83639bdc}{
+real \& \hyperlink{classVectorN_af6be6194bee3d68ab71217cb83639bdc}{x} (void)}
+\label{classVectorN_af6be6194bee3d68ab71217cb83639bdc}
+
+\begin{DoxyCompactList}\small\item\em Returns a reference to the first element. \end{DoxyCompactList}\item 
+\hypertarget{classVectorN_adf0a31d3c269331b655ae7eba1e3f828}{
+real \hyperlink{classVectorN_adf0a31d3c269331b655ae7eba1e3f828}{x} (void) const }
+\label{classVectorN_adf0a31d3c269331b655ae7eba1e3f828}
+
+\begin{DoxyCompactList}\small\item\em Returns the value of the first coordinate. \end{DoxyCompactList}\item 
+real \& \hyperlink{classVectorN_a5e4c89d57463830a33a33d4ed20b2ff7}{y} (void)
+\begin{DoxyCompactList}\small\item\em The y coordinate is usually the second coordinate. \end{DoxyCompactList}\item 
+real \hyperlink{classVectorN_a8009604cc1f15e40f0f8459b16821992}{y} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to the second coordinate. \end{DoxyCompactList}\item 
+real \& \hyperlink{classVectorN_acd1728a98fc3acbd47f0bcb29e542e28}{z} (void)
+\begin{DoxyCompactList}\small\item\em The z coordinate is usually the third coordinate. \end{DoxyCompactList}\item 
+real \hyperlink{classVectorN_a869ec216cbaba126966a10a93f5bcb0a}{z} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the value of the third coordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classVectorN_acf9b4d0e9c4591dd61dd0273c6b153f1}{
+real \hyperlink{classVectorN_acf9b4d0e9c4591dd61dd0273c6b153f1}{coord} \mbox{[}dim\mbox{]}}
+\label{classVectorN_acf9b4d0e9c4591dd61dd0273c6b153f1}
+
+\begin{DoxyCompactList}\small\item\em Where the coordinates are actually stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename real = double, unsigned int dim = 3$>$class VectorN$<$ real, dim $>$}
+
+A N-\/dimensional Vector class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classVectorN_a2340b63fb9299ad20b23ff162692d720}{
+\index{VectorN@{VectorN}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!VectorN@{VectorN}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ bool {\bf VectorN}$<$ real, dim $>$::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf VectorN}$<$ real, dim $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a2340b63fb9299ad20b23ff162692d720}
+
+
+Inequality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & another vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether this and v have at least one distinct coordinate within the error margin 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a829a2b55702c0fc475c3ae39d79b4e66}{
+\index{VectorN@{VectorN}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!VectorN@{VectorN}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ template$<$typename scalar $>$ {\bf VectorN}$<$real,dim$>$ {\bf VectorN}$<$ real, dim $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{scalar}]{s}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a829a2b55702c0fc475c3ae39d79b4e66}
+
+
+Multiplication by scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & scalar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+product vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_ac969f8b5e56b59d5aef32bcde365bf24}{
+\index{VectorN@{VectorN}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!VectorN@{VectorN}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ real {\bf VectorN}$<$ real, dim $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf VectorN}$<$ real, dim $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_ac969f8b5e56b59d5aef32bcde365bf24}
+
+
+Dot product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v,:} & another vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+: dot product 
+\end{DoxyReturn}
+\hypertarget{classVectorN_ab898c49e2188a964a637fdc749e9b26d}{
+\index{VectorN@{VectorN}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!VectorN@{VectorN}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$\& {\bf VectorN}$<$ real, dim $>$::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{real}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_ab898c49e2188a964a637fdc749e9b26d}
+
+
+Multiplication by scalar assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & scalar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this (altered) vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a26e5f52c7b135d5d5c7775061e19647c}{
+\index{VectorN@{VectorN}!operator+@{operator+}}
+\index{operator+@{operator+}!VectorN@{VectorN}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$ {\bf VectorN}$<$ real, dim $>$::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf VectorN}$<$ real, dim $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a26e5f52c7b135d5d5c7775061e19647c}
+
+
+Vector sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & another vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sum vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a91138a1f8badc1c7e656005f4f7cfe30}{
+\index{VectorN@{VectorN}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!VectorN@{VectorN}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$\& {\bf VectorN}$<$ real, dim $>$::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf VectorN}$<$ real, dim $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a91138a1f8badc1c7e656005f4f7cfe30}
+
+
+Vector sum assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & another vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this (altered) vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a6d4600d3a81bb8c486770771a38d6e30}{
+\index{VectorN@{VectorN}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!VectorN@{VectorN}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$ {\bf VectorN}$<$ real, dim $>$::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf VectorN}$<$ real, dim $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a6d4600d3a81bb8c486770771a38d6e30}
+
+
+Vector difference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & another vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+difference vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a200e8f7a82d7681232ac18fcbd746f29}{
+\index{VectorN@{VectorN}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!VectorN@{VectorN}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$ {\bf VectorN}$<$ real, dim $>$::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a200e8f7a82d7681232ac18fcbd746f29}
+
+
+Symmetric operator (unary minus) 
+
+\begin{DoxyReturn}{Returns}
+: symmetric vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a85e5e683a6f9aeff68b546ec923c737c}{
+\index{VectorN@{VectorN}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!VectorN@{VectorN}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$\& {\bf VectorN}$<$ real, dim $>$::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf VectorN}$<$ real, dim $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a85e5e683a6f9aeff68b546ec923c737c}
+
+
+Vector difference assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & another vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this (altered) vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_aca314d985163785e68d412a2e73fd50c}{
+\index{VectorN@{VectorN}!operator/@{operator/}}
+\index{operator/@{operator/}!VectorN@{VectorN}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$ {\bf VectorN}$<$ real, dim $>$::operator/ (
+\begin{DoxyParamCaption}
+\item[{real}]{s}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_aca314d985163785e68d412a2e73fd50c}
+
+
+Multiplication by inverse scalar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & scalar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+product vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a69839721f7fdf66ee896a91f98655274}{
+\index{VectorN@{VectorN}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!VectorN@{VectorN}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$\& {\bf VectorN}$<$ real, dim $>$::operator/= (
+\begin{DoxyParamCaption}
+\item[{real}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a69839721f7fdf66ee896a91f98655274}
+
+
+Multiplication by inverse scalar assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & scalar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this (altered) vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a7202401fb6ed378c10a06397e46d9d49}{
+\index{VectorN@{VectorN}!operator=@{operator=}}
+\index{operator=@{operator=}!VectorN@{VectorN}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ {\bf VectorN}$<$real,dim$>$\& {\bf VectorN}$<$ real, dim $>$::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf VectorN}$<$ real, dim $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a7202401fb6ed378c10a06397e46d9d49}
+
+
+Assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & another vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this (altered) vector 
+\end{DoxyReturn}
+\hypertarget{classVectorN_abdb4216ebccd9e51dc74f9f3bf5ec4eb}{
+\index{VectorN@{VectorN}!operator==@{operator==}}
+\index{operator==@{operator==}!VectorN@{VectorN}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ bool {\bf VectorN}$<$ real, dim $>$::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf VectorN}$<$ real, dim $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_abdb4216ebccd9e51dc74f9f3bf5ec4eb}
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & another vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether this and v have equal coordinates within the error margin 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a5463f965a3bb96d9b2a87b6392bc15c7}{
+\index{VectorN@{VectorN}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!VectorN@{VectorN}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ real {\bf VectorN}$<$ real, dim $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a5463f965a3bb96d9b2a87b6392bc15c7}
+
+
+Coordinate indexing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & coordinate index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of the i'th coordinate value. 
+\end{DoxyReturn}
+\hypertarget{classVectorN_aa926f5c408d53dfc7ec581e9b47c27ad}{
+\index{VectorN@{VectorN}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!VectorN@{VectorN}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ real\& {\bf VectorN}$<$ real, dim $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_aa926f5c408d53dfc7ec581e9b47c27ad}
+
+
+Coordinate indexing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & coordinate index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to the i'th coordinate value. 
+\end{DoxyReturn}
+\hypertarget{classVectorN_a8009604cc1f15e40f0f8459b16821992}{
+\index{VectorN@{VectorN}!y@{y}}
+\index{y@{y}!VectorN@{VectorN}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ real {\bf VectorN}$<$ real, dim $>$::y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a8009604cc1f15e40f0f8459b16821992}
+
+
+Returns a reference to the second coordinate. 
+
+Must have at least dimension 2. \hypertarget{classVectorN_a5e4c89d57463830a33a33d4ed20b2ff7}{
+\index{VectorN@{VectorN}!y@{y}}
+\index{y@{y}!VectorN@{VectorN}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ real\& {\bf VectorN}$<$ real, dim $>$::y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a5e4c89d57463830a33a33d4ed20b2ff7}
+
+
+The y coordinate is usually the second coordinate. 
+
+Returns a reference to the second coordinate. Must have at least dimension 2. \hypertarget{classVectorN_acd1728a98fc3acbd47f0bcb29e542e28}{
+\index{VectorN@{VectorN}!z@{z}}
+\index{z@{z}!VectorN@{VectorN}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ real\& {\bf VectorN}$<$ real, dim $>$::z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_acd1728a98fc3acbd47f0bcb29e542e28}
+
+
+The z coordinate is usually the third coordinate. 
+
+Returns a reference to the third coordinate. Must have at least dimension 3. \hypertarget{classVectorN_a869ec216cbaba126966a10a93f5bcb0a}{
+\index{VectorN@{VectorN}!z@{z}}
+\index{z@{z}!VectorN@{VectorN}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename real = double, unsigned int dim = 3$>$ real {\bf VectorN}$<$ real, dim $>$::z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVectorN_a869ec216cbaba126966a10a93f5bcb0a}
+
+
+Returns the value of the third coordinate. 
+
+Must have at least dimension 3. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+vectorn.hpp\end{DoxyCompactItemize}
