@@ -84,7 +84,7 @@ public:
     inline VectorN<real,dim>& operator=(const VectorN<real,dim>& v) {
         for (unsigned i = 0; i < dim; i++) coord[i] = v.coord[i];
         return *this;
-    };
+    }
     
     /// @brief Vector sum assignment
     /// @param v another vector
@@ -92,7 +92,7 @@ public:
     inline VectorN<real,dim>& operator+=(const VectorN<real,dim>& v) {
         for (unsigned i = 0; i < dim; i++) coord[i] += v.coord[i];
         return *this;
-    };
+    }
     
     /// @brief Vector difference assignment
     /// @param v another vector
@@ -100,7 +100,7 @@ public:
     inline VectorN<real,dim>& operator-=(const VectorN<real,dim>& v) {
         for (unsigned i = 0; i < dim; i++) coord[i] -= v.coord[i];
         return *this;
-    };
+    }
     
     /// @brief Multiplication by scalar assignment
     /// @param s scalar
@@ -108,7 +108,7 @@ public:
     inline VectorN<real,dim>& operator*=(real s) {
         for (unsigned i = 0; i < dim; i++) coord[i] *= s;
         return *this;
-    };
+    }
     
     /// @brief Multiplication by inverse scalar assignment
     /// @param s scalar
@@ -126,7 +126,7 @@ public:
         VectorN<real,dim> r;
         for (unsigned i = 0; i < dim; i++) r.coord[i] = coord[i]+v.coord[i];
         return r;
-    };
+    }
     
     /// @brief Vector difference
     /// @param v another vector
@@ -135,7 +135,7 @@ public:
         VectorN<real,dim> r;
         for (unsigned i = 0; i < dim; i++) r.coord[i] = coord[i]-v.coord[i];
         return r;
-    };
+    }
     
     /// @brief Multiplication by scalar
     /// @param s scalar
@@ -145,7 +145,7 @@ public:
         VectorN<real,dim> r;
         for (unsigned i = 0; i < dim; i++) r.coord[i] = coord[i] * (real) s;
         return r;
-    };
+    }
     
     /// @brief Multiplication by inverse scalar
     /// @param s scalar
@@ -306,13 +306,13 @@ public:
     //
     
     /// Empty constructor
-    PointN () : VectorN<real,dim> () {};
+    PointN () : VectorN<real,dim> () {}
     
     /// Constructor from an array of coordinates
-    PointN (const real v[]) : VectorN<real,dim> (v) {};
+    PointN (const real v[]) : VectorN<real,dim> (v) {}
     
     /// Constructor from another VectorN
-    PointN (const VectorN<real,dim>& v) : VectorN<real,dim> (v) {}; 
+    PointN (const VectorN<real,dim>& v) : VectorN<real,dim> (v) {}
 
     /// Constructor from a single coordinate 
     PointN (const real v) : VectorN<real,dim> () {

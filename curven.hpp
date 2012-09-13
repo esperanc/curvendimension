@@ -403,12 +403,12 @@ public:
     }
 
     /// @brief Chaikin supersampling.
-    /// @param numberOfsimplifications number of subdivisions.
-    virtual void chaikinSubDivide( unsigned int numberOfsimplifications = 1 ){
+    /// @param numberOfsubdivisions number of subdivisions.
+    virtual void chaikinSubDivide( unsigned int numberOfsubdivisions = 1 ){
         if (size() == 0) return;
         if( isClosed() )
         {
-            for( unsigned int n = 0 ; n < numberOfsimplifications ; ++n )
+            for( unsigned int n = 0 ; n < numberOfsubdivisions ; ++n )
             {
                 std::vector<Point>  tmp;
                 // step over every 2 points
@@ -445,7 +445,7 @@ public:
         }
         else
         {
-            for( unsigned int n = 0 ; n < numberOfsimplifications ; ++n )
+            for( unsigned int n = 0 ; n < numberOfsubdivisions ; ++n )
             {
                 std::vector<Point>  tmp;
                 // keep the first point
@@ -583,9 +583,10 @@ public:
 		Point p0 = (*this) [k];
 		(*this) [k] = pk;
 		Point prev = p0;
+//        int lastVisited ;
 		for (int i = k-1; i >= 0; i--) {
 			Point pi = at(i);
-			double dincr = (pi-at(i+1)).norm();
+//			double dincr = (pi-at(i+1)).norm();
 			d += (pi-prev).norm();
 			if (d > maxLen) break;
 			prev = pi;
