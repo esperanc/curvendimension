@@ -24,29 +24,29 @@ public:
     
     /// Empty constructor
     VectorN () { 
-        for (unsigned i = 0; i < dim; i++) coord[i] = 0; 
+        for (unsigned i = 0; i < dim; i++) coord[i] = 0;
     }
     
     /// Constructor from an array of coordinates
     VectorN (const real v[]) {  
-        for (unsigned i = 0; i < dim; i++) coord[i] = v[i]; 
+        for (unsigned i = 0; i < dim; i++) coord[i] = v[i];
     }
     
     /// Constructor from another VectorN
-    VectorN (const VectorN<real,dim>& v) { 
-        for (unsigned i = 0; i < dim; i++) coord[i] = v.coord[i]; 
+    VectorN (const VectorN<real,dim>& v) {
+        for (unsigned i = 0; i < dim; i++) coord[i] = v.coord[i];
     }
     
     //
     // Access methods
     //
     
-    /// @brief Coordinate indexing 
+    /// @brief Coordinate indexing
     /// @param i  coordinate index.
     /// @return  reference to the i'th coordinate value.
     inline real& operator[] (unsigned i) { assert(i<dim); return coord[i]; }
 
-    /// @brief Coordinate indexing 
+    /// @brief Coordinate indexing
     /// @param i  coordinate index.
     /// @return  value of the i'th coordinate value.
     inline real  operator[] (unsigned i) const { assert(i<dim); return coord[i]; }
@@ -60,7 +60,7 @@ public:
     /// @return whether this and v have equal coordinates within the error margin
     inline bool operator==(const VectorN<real,dim> &v) const {
         for (unsigned i = 0; i < dim; i++) {
-            real d = coord[i]-v.coord[i]; 
+            real d = coord[i]-v.coord[i];
             if (d > FEQ_EPS2) return false;
         }
         return true;
@@ -68,7 +68,7 @@ public:
     
     /// @brief Inequality operator
     /// @param v another vector
-    /// @return whether this and v have at least one distinct coordinate within 
+    /// @return whether this and v have at least one distinct coordinate within
     ///   the error margin
     inline bool operator!=(const VectorN<real,dim>& v) const {
         return !(*this == v);
@@ -150,7 +150,7 @@ public:
     /// @brief Multiplication by inverse scalar
     /// @param s scalar
     /// @return  product vector
-    inline VectorN<real,dim> operator/(real s) const { 
+    inline VectorN<real,dim> operator/(real s) const {
         VectorN<real,dim> r;
         for (unsigned i = 0; i < dim; i++) r.coord[i] = coord[i] / s;
         return r;
@@ -165,7 +165,7 @@ public:
         return r;
     } 
     
-    /// @brief Dot product
+    /// @brief dot product
     /// @param v: another vector
     /// @return : dot product
     inline real operator*(const VectorN<real,dim>& v) const {
@@ -204,7 +204,7 @@ public:
         return this->coord[1];
     }
 
-    /// @brief Returns a reference to the second coordinate. 
+    /// @brief Returns a reference to the second coordinate.
     ///
     /// Must have at least dimension 2.
     inline real y(void) const {
@@ -222,7 +222,7 @@ public:
         return this->coord[2];
     }
     
-    /// @brief Returns the value of the third coordinate. 
+    /// @brief Returns the value of the third coordinate.
     ///
     /// Must have at least dimension 3.
     inline real z(void) const {
@@ -234,7 +234,7 @@ public:
 
 /// Makes scalar multiplication commutative.
 template < typename scalar, typename real, unsigned int dim >
-inline VectorN<real,dim> operator*(scalar s, const VectorN<real,dim>& v) { 
+inline VectorN<real,dim> operator*(scalar s, const VectorN<real,dim>& v) {
     return v*(real)s; 
 }
 
@@ -314,7 +314,7 @@ public:
     /// Constructor from another VectorN
     PointN (const VectorN<real,dim>& v) : VectorN<real,dim> (v) {}
 
-    /// Constructor from a single coordinate 
+    /// Constructor from a single coordinate
     PointN (const real v) : VectorN<real,dim> () {
         for (int i = 0; i < dim; i++) this->coord [i] = v;
     }
@@ -336,7 +336,7 @@ public:
 
     /// @brief Set coordinates from a vector
     /// @param v: a vector
-    inline void set( const VectorN<real,dim>& v ) { 
+    inline void set( const VectorN<real,dim>& v ) {
         for (int i = 0; i < dim; i++) this->coord [i] = v[i];
     }
     
@@ -358,7 +358,7 @@ public:
         return r;
     }
 
-    /// @brief Get point with maximum coordinates 
+    /// @brief Get point with maximum coordinates
     /// @param p another point.
     /// @return point whose coordinates are the maximum between this point's coordinates
     ///     and p's

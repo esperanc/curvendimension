@@ -547,19 +547,19 @@ public:
             if(isClosed())
             {
                 v = ( atEnd().toVector()+3*at(0).toVector()+at(1).toVector() )/5.0;
-                tmp.push_back( Point(v[0],v[1],v[2]) );
+                tmp.push_back( Point(v) );
             }
             else tmp.push_back( atBegin() );
 
             for( unsigned int i = 1 ; i < size()-1 ; ++i )
             {
                 v = ( at(i-1).toVector()+3*at(i).toVector()+at(i+1).toVector() )/5.0;
-                tmp.push_back( Point(v[0],v[1],v[2]) );
+                tmp.push_back( Point(v)  );
             }
             if (isClosed())
             {
                 v = ( at(size()-2).toVector()+3*atEnd().toVector()+at(0).toVector() )/5.0;
-                tmp.push_back( Point(v[0],v[1],v[2]) );
+                tmp.push_back( Point(v)  );
             }
             else tmp.push_back( atEnd() );
             pPoints = tmp;
