@@ -1,3 +1,30 @@
+/* *****************************************************************************
+** *****************************************************************************
+**
+** CurveNDimension Lib is a C++ library for handling n-dimensional curves, or,
+** actually, n-dimensional polygonal lines.
+**
+** Copyright (C) 2011-2015  Emilio Vital Brazil - emilio.brazil@gmail.com and
+**                          Claudio Esperanca   - esperanc@cos.ufrj.br
+**
+** This file is part of CurveNDimension.
+**
+** CurveNDimension is free software: you can redistribute it and/or modify
+** it under the terms of the GNU LESSER GENERAL PUBLIC LICENSE as published by
+** the Free Software Foundation, either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** CurveNDimension is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU General Public License for more details.
+**
+** You should have received a copy of the GNU General Public License
+** along with CurveNDimension.  If not, see <http://www.gnu.org/licenses/>.
+**
+** *****************************************************************************
+** ****************************************************************************/
+
 #ifndef __CATMULLROM_HPP__
 #define __CATMULLROM_HPP__
 ///
@@ -47,7 +74,7 @@ public:
                             const real p2[], const real p3[], real p[]) const {
         real bf [4];
         blendFactors (u,bf);
-        for (int j = 0; j < dim; j++) {
+        for ( unsigned int j = 0 ; j <  dim ; j++) {
             p[j] = p0[j]*bf[0]+ 
                    p1[j]*bf[1]+
                    p2[j]*bf[2]+
