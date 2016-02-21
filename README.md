@@ -1,8 +1,8 @@
-Introduction
+#Introduction
 
 This is a C++ library for handling n-dimensional curves, or, actually, n-dimensional polygonal lines.
 
-# Classes provided
+## Classes provided
 
 * `template<typename real, unsigned int dim, class Point = PointN<real,dim>, class Vector = VectorN<real,dim>>`
     `class PolygonalCurve< real, dim, Point, Vector >`
