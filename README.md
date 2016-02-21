@@ -1,4 +1,4 @@
-ntroduction
+Introduction
 
 This is a C++ library for handling n-dimensional curves, or, actually, n-dimensional polygonal lines.
 
